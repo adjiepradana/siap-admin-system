@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAP - SIstem Informasi Administrasi Pelajar</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-user-graduate"></i> Welcome to SIAP</h1>
+            <p>Sistem Informasi Administrasi Pelajar</p>
+            <p>Kelola data akademik dengan efisien dan modern</p>
+        </header>
+
+        <form id="formSiswa">
+            <div class="grid-container">
+                <!-- Identitas Diri -->
+                <section class="form-card">
+                    <h3><i class="fas fa-id-card"></i> Identitas Diri</h3>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                    </div>
+                    <div class="form-group">
+                        <label for="nisn">NISN</label>
+                        <input type="number" id="nisn" placeholder="Nomor Induk Siswa Nasional">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jenisKelamin">Jenis Kelamin</label>
+                            <select id="jenisKelamin">
+                                <option value="">Pilih</option>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggalLahir">Tanggal Lahir</label>
+                            <input type="date" id="tanggalLahir">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat Domisili</label>
+                        <textarea id="alamat" rows="3" placeholder="Alamat lengkap..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Data Akademik & Kontak -->
+                <div class="side-column">
+                    <section class="form-card">
+                        <h3><i class="fas fa-school"></i> Akademik</h3>
+                        <div class="form-group">
+                            <label for="kelas">Kelas</label>
+                            <input type="text" id="kelas" placeholder="Contoh: XII TKJ 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="jurusan">Jurusan</label>
+                            <select id="jurusan">
+                                <option value="">Pilih Jurusan</option>
+                                <option value="RPL">Rekayasa Perangkat Lunak</option>
+                                <option value="TKJ">Teknik Komputer & Jaringan</option>
+                                <option value="Elektro">Teknik Elektro</option>
+                                <option value="AKL">Akuntansi</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <section class="form-card">
+                        <h3><i class="fas fa-address-book"></i> Kontak</h3>
+                        <div class="form-group">
+                            <label for="noTelp">Nomor Telepon</label>
+                            <input type="number" id="noTelp" placeholder="08xxxxxxxxxx">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Aktif</label>
+                            <input type="email" id="email" placeholder="nama@email.com">
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button type="button" onclick="simpanData()" class="btn-submit">
+                    <i class="fas fa-save"></i> Simpan Data Siswa
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
