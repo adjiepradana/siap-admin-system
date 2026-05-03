@@ -270,3 +270,14 @@ select option {
 select:focus {
     outline: none;
 }
+
+.glass-popup {
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+.swal2-loader {
+    border-color: #ff6b1a transparent #ff6b1a transparent !important;
+}
