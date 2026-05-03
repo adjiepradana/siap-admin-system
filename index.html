@@ -57,6 +57,17 @@
         e.preventDefault()
         handleLogin()
     })
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz3Tz7SXTxXHLuVfrzR_EuI6TOSsB_16SzaHAcgfY-Jp2SscbAT5xwdkYmN4G6sR3b2/exec'
+	const form = document.forms['SIAP - Data Siswa']
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+	})
     </script>
 </body>
 </html>

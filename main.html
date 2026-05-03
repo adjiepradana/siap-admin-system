@@ -24,18 +24,18 @@
                 <!-- Identitas Diri -->
                 <section class="form-card">
                     <h3><i class="fas fa-id-card"></i> Identitas Diri</h3>
-                    <div class="form-group">
+                        <div class="form-group">
                         <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                        <input type="text" id="nama" placeholder="Masukkan nama lengkap" name="nama">
                     </div>
                     <div class="form-group">
                         <label for="nisn">NISN</label>
-                        <input type="number" id="nisn" placeholder="Nomor Induk Siswa Nasional">
+                        <input type="number" id="nisn" placeholder="Nomor Induk Siswa Nasional" name="nisn">
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="jenisKelamin">Jenis Kelamin</label>
-                            <select id="jenisKelamin">
+                            <select id="jenisKelamin" name="jenisKelamin">
                                 <option value="">Pilih</option>
                                 <option value="Laki-laki">Laki-laki</option>
                                 <option value="Perempuan">Perempuan</option>
@@ -43,12 +43,12 @@
                         </div>
                         <div class="form-group">
                             <label for="tanggalLahir">Tanggal Lahir</label>
-                            <input type="date" id="tanggalLahir">
+                            <input type="date" id="tanggalLahir" name="tanggalLahir">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="alamat">Alamat Domisili</label>
-                        <textarea id="alamat" rows="3" placeholder="Alamat lengkap..."></textarea>
+                        <textarea id="alamat" rows="3" placeholder="Alamat lengkap..." name="alamat"></textarea>
                     </div>
                 </section>
 
@@ -58,11 +58,11 @@
                         <h3><i class="fas fa-school"></i> Akademik</h3>
                         <div class="form-group">
                             <label for="kelas">Kelas</label>
-                            <input type="text" id="kelas" placeholder="Contoh: XII TKJ 1">
+                            <input type="text" id="kelas" placeholder="Contoh: XII TKJ 1" name="kelas">
                         </div>
                         <div class="form-group">
                             <label for="jurusan">Jurusan</label>
-                            <select id="jurusan">
+                            <select id="jurusan" name="jurusan">
                                 <option value="">Pilih Jurusan</option>
                                 <option value="RPL">Rekayasa Perangkat Lunak</option>
                                 <option value="TKJ">Teknik Komputer & Jaringan</option>
@@ -76,11 +76,11 @@
                         <h3><i class="fas fa-address-book"></i> Kontak</h3>
                         <div class="form-group">
                             <label for="noTelp">Nomor Telepon</label>
-                            <input type="number" id="noTelp" placeholder="08xxxxxxxxxx">
+                            <input type="number" id="noTelp" placeholder="08xxxxxxxxxx" name="noTelp">
                         </div>
                         <div class="form-group">
                             <label for="email">Email Aktif</label>
-                            <input type="email" id="email" placeholder="nama@email.com">
+                            <input type="email" id="email" placeholder="nama@email.com" name="email">
                         </div>
                     </section>
                 </div>
@@ -95,6 +95,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
